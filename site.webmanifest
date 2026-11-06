@@ -1,0 +1,10 @@
+{
+  "name": "MGIT Computer Education",
+  "short_name": "MGIT",
+  "description": "Practical computer education and digital-skills learning in Vadakkencherry, Palakkad.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0a3775",
+  "icons": [{ "src": "/assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
