@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="620" viewBox="0 0 620 620" fill="none">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="620" y2="620"><stop stop-color="#E9F4FF"/><stop offset="1" stop-color="#FFF6EC"/></linearGradient></defs>
+<rect width="620" height="620" rx="42" fill="url(#bg)"/>
+<circle cx="467" cy="163" r="90" fill="#DDEBFF"/>
+<rect x="90" y="124" width="440" height="364" rx="38" fill="#ffffff" stroke="#DCE6F2" stroke-width="3"/>
+<text x="128" y="178" fill="#0C3C7D" font-family="Arial, sans-serif" font-size="28" font-weight="700">Programming & Digital Skills</text>
+<rect x="126" y="215" width="172" height="100" rx="26" fill="#102A56"/>
+<rect x="320" y="215" width="174" height="100" rx="26" fill="#0F5BAF"/>
+<rect x="126" y="340" width="368" height="110" rx="26" fill="#F7FAFE"/>
+<text x="151" y="275" fill="#ffffff" font-family="Courier New, monospace" font-size="28" font-weight="700">&lt;/&gt;</text>
+<text x="348" y="275" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="700">Web • Python • Java</text>
+<path d="M163 388h226M163 420h173" stroke="#A6BCD8" stroke-width="12" stroke-linecap="round"/>
+<circle cx="450" cy="398" r="24" fill="#F58A26"/>
+<circle cx="398" cy="398" r="24" fill="#8DB9F3"/>
+</svg>

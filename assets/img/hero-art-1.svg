@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="680" viewBox="0 0 900 680" fill="none">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="900" y2="680" gradientUnits="userSpaceOnUse"><stop stop-color="#EBF5FF"/><stop offset="1" stop-color="#DDEEFF"/></linearGradient>
+<linearGradient id="card" x1="110" y1="90" x2="760" y2="560" gradientUnits="userSpaceOnUse"><stop stop-color="#0C3C7D"/><stop offset="1" stop-color="#1459AC"/></linearGradient>
+<linearGradient id="blob" x1="480" y1="140" x2="770" y2="320" gradientUnits="userSpaceOnUse"><stop stop-color="#FFB76B"/><stop offset="1" stop-color="#F58A26"/></linearGradient>
+</defs>
+<rect width="900" height="680" rx="48" fill="url(#bg)"/>
+<circle cx="742" cy="136" r="96" fill="#FFE0C2"/>
+<circle cx="148" cy="548" r="68" fill="#D6E8FF"/>
+<path d="M513 105c74-32 173 3 206 71 20 42 10 103-23 149-34 47-92 69-150 61-57-9-112-48-131-101-20-53-2-119 44-151 15-10 35-22 54-29z" fill="url(#blob)" opacity=".92"/>
+<rect x="80" y="92" width="530" height="352" rx="34" fill="url(#card)"/>
+<rect x="118" y="130" width="454" height="48" rx="18" fill="white" opacity=".16"/>
+<rect x="118" y="206" width="224" height="172" rx="28" fill="white" opacity=".11"/>
+<rect x="360" y="206" width="212" height="172" rx="28" fill="white" opacity=".11"/>
+<rect x="140" y="230" width="180" height="16" rx="8" fill="#B9D7FF"/>
+<rect x="140" y="262" width="126" height="12" rx="6" fill="#9AC1F4"/>
+<rect x="140" y="290" width="146" height="12" rx="6" fill="#9AC1F4"/>
+<rect x="140" y="318" width="104" height="12" rx="6" fill="#9AC1F4"/>
+<rect x="140" y="346" width="160" height="12" rx="6" fill="#9AC1F4"/>
+<rect x="391" y="236" width="150" height="110" rx="22" fill="#F3F8FF"/>
+<path d="M421 310l33-35 28 25 44-51" stroke="#1459AC" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="645" cy="481" r="115" fill="white"/>
+<circle cx="645" cy="481" r="79" fill="#EBF5FF"/>
+<circle cx="645" cy="481" r="25" fill="#F58A26"/>
+<path d="M638 418c16-13 36-22 59-22 52 0 95 43 95 95 0 25-10 48-25 65" stroke="#D1E4FD" stroke-width="18" stroke-linecap="round"/>
+<rect x="110" y="486" width="428" height="108" rx="28" fill="white"/>
+<rect x="142" y="523" width="134" height="14" rx="7" fill="#D4E4F8"/>
+<rect x="142" y="551" width="210" height="12" rx="6" fill="#A4BEDF"/>
+<rect x="401" y="516" width="103" height="48" rx="18" fill="#FFF3E7"/>
+<text x="140" y="161" fill="#ffffff" font-family="Arial, sans-serif" font-size="28" font-weight="700">Learning Dashboard</text>
+<text x="142" y="527" fill="#0C3C7D" font-family="Arial, sans-serif" font-size="28" font-weight="700">Creative, practical and future-ready</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="620" viewBox="0 0 620 620" fill="none">
+<defs>
+<linearGradient id="bg" x1="77" y1="66" x2="546" y2="563" gradientUnits="userSpaceOnUse"><stop stop-color="#102A56"/><stop offset="1" stop-color="#0C5BB0"/></linearGradient>
+<linearGradient id="card" x1="158" y1="129" x2="468" y2="457" gradientUnits="userSpaceOnUse"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#ECF5FF"/></linearGradient>
+</defs>
+<rect width="620" height="620" rx="42" fill="url(#bg)"/>
+<circle cx="496" cy="138" r="84" fill="#ffffff" fill-opacity=".12"/>
+<circle cx="150" cy="498" r="62" fill="#F58A26" fill-opacity=".18"/>
+<rect x="126" y="110" width="366" height="400" rx="34" fill="url(#card)"/>
+<text x="160" y="162" fill="#102A56" font-family="Arial, sans-serif" font-size="28" font-weight="700">AI & Emerging Tech</text>
+<rect x="164" y="198" width="290" height="176" rx="24" fill="#0F478F"/>
+<circle cx="225" cy="286" r="30" fill="#F58A26"/>
+<circle cx="308" cy="249" r="24" fill="#9CC8FF"/>
+<circle cx="379" cy="298" r="36" fill="#D9EBFF"/>
+<path d="M225 286l83-37 71 49" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+<rect x="164" y="403" width="124" height="58" rx="18" fill="#FFF1E5"/>
+<rect x="304" y="403" width="150" height="58" rx="18" fill="#EAF4FF"/>
+<text x="197" y="440" fill="#9C5E1D" font-family="Arial, sans-serif" font-size="20" font-weight="700">ChatGPT</text>
+<text x="337" y="440" fill="#0F478F" font-family="Arial, sans-serif" font-size="20" font-weight="700">Data Analytics</text>
+</svg>
