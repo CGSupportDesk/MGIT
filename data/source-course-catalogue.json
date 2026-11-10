@@ -489,7 +489,8 @@
       "description": "A career-focused programme that develops practical financial accounting, business accounting and GST compliance skills using TallyPrime. Learners gain an understanding of accounting principles, recording business transactions, managing receivables and payables, preparing financial and MIS reports, and creating GST invoices and returns. The course is aligned with recognised credit-based learning frameworks.",
       "code": null,
       "collection": "Tally Education reference",
-      "slug": "professional-financial-accounting-with-gst-using-tallyprime"
+      "slug": "professional-financial-accounting-with-gst-using-tallyprime",
+      "category": "Accounting, Finance & Tally"
     },
     {
       "no": 2,
@@ -537,11 +538,33 @@
       "slug": "tally-professional"
     }
   ],
-  "unique_course_count_after_overlap": 49,
   "notes": [
     "49 distinct titles/offerings across documents after matching five common Tally courses; do not imply active batch availability",
     "C-DIT list is a 48-item reference catalogue; separately titled Tally Education list contains 6",
     "Source descriptions are general-purpose summaries, not official syllabi",
     "Naming, offering, fees, affiliation, certification and availability to be verified with MGIT"
-  ]
+  ],
+  "additional": [
+    {
+      "no": 1,
+      "name": "SAP FICO Certification Training",
+      "duration": "Ask MGIT",
+      "description": "Build practical SAP Financial Accounting and Controlling skills, including enterprise finance workflows, reporting and hands-on ERP processes.",
+      "code": "SAP FICO",
+      "category": "Accounting, Finance & Tally",
+      "collection": "MGIT Professional Courses",
+      "slug": "sap-fico-certification-training"
+    },
+    {
+      "no": 2,
+      "name": "SAP MM Certification Training",
+      "duration": "Ask MGIT",
+      "description": "Learn SAP Materials Management fundamentals, including procurement, inventory, vendor management and real-world ERP workflow processes.",
+      "code": "SAP MM",
+      "category": "Accounting, Finance & Tally",
+      "collection": "MGIT Professional Courses",
+      "slug": "sap-mm-certification-training"
+    }
+  ],
+  "unique_course_count_after_overlap": 51
 }

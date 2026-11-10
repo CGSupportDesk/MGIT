@@ -41,14 +41,15 @@
   };
   function icon(name, cls='icon') { return `<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true">${iconPaths[name] || iconPaths.book}</svg>`; }
   function escapeHTML(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-  function detailId(obj) { return obj.collection === 'Tally Education reference' ? `tally-${obj.no}` : `cdit-${obj.no}`; }
+  function detailId(obj) { return obj.collection === 'Tally Education reference' ? `tally-${obj.no}` : obj.collection === 'MGIT Professional Courses' ? `sap-${obj.no}` : `cdit-${obj.no}`; }
   function enquireUrl(course) { return `contact.html?course=${encodeURIComponent(course)}`; }
-  function tagFor(course) { return course.collection === 'Tally Education reference' ? 'Tally Education' : 'C-DIT reference'; }
+  function tagFor(course) { return course.collection === 'Tally Education reference' ? 'Tally Education' : course.collection === 'MGIT Professional Courses' ? 'SAP Professional' : 'C-DIT reference'; }
   function card(course) {
     const tally = course.collection === 'Tally Education reference';
+    const professional = course.collection === 'MGIT Professional Courses';
     const duration = course.duration || 'Ask MGIT';
     return `<article class="course-card" data-course-key="${escapeHTML(detailId(course))}">
-      <div class="course-meta"><span class="tiny-tag ${tally?'tally':''}">${tally?'Tally Education':'C-DIT Course'}</span><span class="course-duration">${icon('clock','icon icon-sm')} ${escapeHTML(duration)}</span></div>
+      <div class="course-meta"><span class="tiny-tag ${tally?'tally':''} ${professional?'sap':''}">${professional?'SAP Professional':tally?'Tally Education':'C-DIT Course'}</span><span class="course-duration">${icon('clock','icon icon-sm')} ${escapeHTML(duration)}</span></div>
       <h3>${escapeHTML(course.name)}</h3><p class="course-desc">${escapeHTML(course.description)}</p>
       <div class="course-footer"><button type="button" data-open-course="${escapeHTML(detailId(course))}">View details ${icon('arrow','icon icon-sm')}</button><a href="${enquireUrl(course.name)}">Enquire</a></div>
     </article>`;
@@ -175,6 +176,14 @@
     if(btn&&nav){btn.addEventListener('click',()=>{const open=!nav.classList.contains('open');nav.classList.toggle('open',open);btn.setAttribute('aria-expanded',String(open));btn.setAttribute('aria-label',open?'Close navigation':'Open navigation');btn.innerHTML=icon(open?'close':'layers');});}
     document.addEventListener('scroll',()=>document.querySelector('.site-header')?.classList.toggle('scrolled',scrollY>8),{passive:true});
   }
+  function initGallery(){
+    const gallery=document.querySelector('[data-gallery]');if(!gallery)return;
+    const slides=[...gallery.querySelectorAll('.gallery-slide')],dots=[...gallery.querySelectorAll('.gallery-dot')];let current=0,timer;
+    const show=index=>{current=(index+slides.length)%slides.length;slides.forEach((s,i)=>s.classList.toggle('is-active',i===current));dots.forEach((d,i)=>{d.classList.toggle('is-active',i===current);d.setAttribute('aria-selected',String(i===current));});};
+    const start=()=>{clearInterval(timer);timer=setInterval(()=>show(current+1),4500);};
+    dots.forEach((dot,i)=>dot.addEventListener('click',()=>{show(i);start();}));
+    gallery.addEventListener('mouseenter',()=>clearInterval(timer));gallery.addEventListener('mouseleave',start);show(0);start();
+  }
   function initGlobalModal(){
     document.addEventListener('click',e=>{
       const trigger=e.target.closest('[data-open-course]');if(trigger){openCourse(trigger.dataset.openCourse,trigger);return;}
@@ -189,7 +198,7 @@
     }});
   }
   document.addEventListener('DOMContentLoaded',()=>{
-    initNav();initGlobalModal();initFeatured();initCourses();initCdit();initTally();initForm();
+    initNav();initGlobalModal();initFeatured();initCourses();initCdit();initTally();initForm();initGallery();
     const year=document.getElementById('year');if(year)year.textContent=new Date().getFullYear();
   });
 })();
