@@ -180,7 +180,7 @@
     const gallery=document.querySelector('[data-gallery]');if(!gallery)return;
     const slides=[...gallery.querySelectorAll('.gallery-slide')],dots=[...gallery.querySelectorAll('.gallery-dot')];let current=0,timer;
     const show=index=>{current=(index+slides.length)%slides.length;slides.forEach((s,i)=>s.classList.toggle('is-active',i===current));dots.forEach((d,i)=>{d.classList.toggle('is-active',i===current);d.setAttribute('aria-selected',String(i===current));});};
-    const start=()=>{clearInterval(timer);timer=setInterval(()=>show(current+1),4500);};
+    const start=()=>{clearInterval(timer);timer=setInterval(()=>show(current+1),3000);};
     dots.forEach((dot,i)=>dot.addEventListener('click',()=>{show(i);start();}));
     gallery.addEventListener('mouseenter',()=>clearInterval(timer));gallery.addEventListener('mouseleave',start);show(0);start();
   }
